@@ -1,0 +1,7 @@
+{
+  "name": "@kentta/state-machines",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": { "xstate": "^5.18.2" }
+}

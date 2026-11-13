@@ -1,0 +1,27 @@
+{
+  "name": "@kentta/mobile",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev:web": "vite --host 0.0.0.0 --port 8081",
+    "build:web": "vite build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@kentta/observability": "workspace:*",
+    "@kentta/state-machines": "workspace:*",
+    "@sqlite.org/sqlite-wasm": "^3.46.1-build3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native-web": "^0.19.13",
+    "uuid": "^11.0.3",
+    "xstate": "^5.18.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.11"
+  }
+}

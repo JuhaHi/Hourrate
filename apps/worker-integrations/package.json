@@ -1,0 +1,17 @@
+{
+  "name": "@kentta/worker-integrations",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.693.0",
+    "@kentta/observability": "workspace:*",
+    "@kentta/shared-types": "workspace:*",
+    "nats": "^2.29.0",
+    "pdf-lib": "^1.17.1",
+    "pg": "^8.13.1",
+    "uuid": "^11.0.3"
+  }
+}

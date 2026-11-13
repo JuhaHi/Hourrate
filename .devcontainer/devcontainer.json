@@ -1,0 +1,14 @@
+{
+  "name": "Kentta-ERP MVP (Codespaces + PWA)",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "forwardPorts": [3000, 8081],
+  "portsAttributes": {
+    "3000": { "label": "Fastify API", "visibility": "public" },
+    "8081": { "label": "Kenttä PWA", "visibility": "public" }
+  },
+  "postCreateCommand": "corepack enable && pnpm install",
+  "postStartCommand": "docker compose -f infra/docker-compose.yml up -d postgres redis nats"
+}
